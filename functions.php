@@ -151,4 +151,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-//require get_template_directory() . '/imgd/imgd_settings.php';
+/**
+ * Load IMGD Framework compatibility file.
+ */
+require get_template_directory() . '/imgd/imgd_funciones.php';
