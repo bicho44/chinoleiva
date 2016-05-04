@@ -18,8 +18,6 @@ function imgd_jquery_enqueue() {
  * Enqueue scripts and styles.
  */
 function imgdigital_scripts() {
-    wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700', false );
-    wp_enqueue_style( 'wpb-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600', false );
 
     wp_enqueue_style( 'imgdigital-style', get_template_directory_uri()."/assets/css/style.css");
 
@@ -65,7 +63,7 @@ function imgd_theme_add_font_editor_styles() {
     $font_url2 = str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600' );
     add_editor_style( $font_url2 );
 }
-add_action( 'after_setup_theme', 'imgd_theme_add_font_editor_styles' );
+//add_action( 'after_setup_theme', 'imgd_theme_add_font_editor_styles' );
 
 
 /**
@@ -87,8 +85,6 @@ require get_template_directory() . '/imgd/imgd_child_pages.php';
 
 //require get_template_directory() . '/inc/imgd/imgd_it_exchange.php';
 
-/* Despreciada por el uso de Piklist */
-//require get_template_directory() . '/inc/imgd/imgd_metaboxes.php'; //  Define los MetaBoxes
 
 /*
  * Remove todo lo que esté en el título de los Archivos
@@ -130,7 +126,7 @@ add_action( 'init', 'imgd_register_menus' );
 function imgd_admin_style() {
     wp_enqueue_style('admin_styles' , get_template_directory_uri().'/assets/css/admin.css');
 }
-add_action('admin_head', 'imgd_admin_style');
+//add_action('admin_head', 'imgd_admin_style');
 
 
 /*
