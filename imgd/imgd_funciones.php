@@ -78,7 +78,7 @@ require get_template_directory() . '/imgd/imgd_images_sizes.php';
 require get_template_directory() . '/imgd/imgd_gallery.php';
 require get_template_directory() . '/imgd/imgd_nav.php';
 
-require get_template_directory() . '/imgd/imgd_archive_order.php';
+//require get_template_directory() . '/imgd/imgd_archive_order.php';
 require get_template_directory() . '/imgd/imgd_child_pages.php';
 //require get_template_directory() . '/imgd/imgd_widgets.php';
 //require get_template_directory() . '/imgd/imgd_pagination.php';
