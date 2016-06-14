@@ -6,8 +6,8 @@
  * Date: 06
  */
 
-get_header();
+get_header();?>
 
 Bienvenidos al sitio del chino
 
-get_footer();
+<?php get_footer();
