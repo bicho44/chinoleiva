@@ -1789,7 +1789,7 @@ a .icon-flip-vertical:before {
   color: #000;
 }
 #menu-social ul li a:hover {
-  color: #b08c3f;
+  color: #d0d0d0;
 }
 #menu-social li a::before {
   content: '\f408';
@@ -1801,10 +1801,10 @@ a .icon-flip-vertical:before {
   -webkit-font-smoothing: antialiased;
 }
 #menu-social li a::before:hover {
-  color: #b08c3f;
+  color: #d0d0d0;
 }
 #barra-social ul li:hover {
-  background-color: #b08c3f;
+  background-color: #d0d0d0;
 }
 #barra-social ul li a[href*="facebook.com"] {
   background-color: #0a246a;
@@ -1955,12 +1955,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #d2b983;
+  color: #8ab0a6;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #be994a;
+  color: #608e82;
   text-decoration: underline;
 }
 a:focus {
@@ -2040,7 +2040,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
@@ -2194,11 +2194,11 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #b08c3f;
+  color: #d0d0d0;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #8a6e32;
+  color: #b7b7b7;
 }
 .text-success {
   color: #3c763d;
@@ -2230,11 +2230,11 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #b08c3f;
+  background-color: #d0d0d0;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #8a6e32;
+  background-color: #b7b7b7;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -3924,26 +3924,26 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #b08c3f;
-  border-color: #9d7d38;
+  background-color: #d0d0d0;
+  border-color: #c3c3c3;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff;
-  background-color: #8a6e32;
-  border-color: #3f3217;
+  background-color: #b7b7b7;
+  border-color: #848484;
 }
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #8a6e32;
-  border-color: #705928;
+  background-color: #b7b7b7;
+  border-color: #a5a5a5;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #8a6e32;
-  border-color: #705928;
+  background-color: #b7b7b7;
+  border-color: #a5a5a5;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3955,8 +3955,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #ffffff;
-  background-color: #705928;
-  border-color: #3f3217;
+  background-color: #a5a5a5;
+  border-color: #848484;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3981,11 +3981,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #b08c3f;
-  border-color: #9d7d38;
+  background-color: #d0d0d0;
+  border-color: #c3c3c3;
 }
 .btn-primary .badge {
-  color: #b08c3f;
+  color: #d0d0d0;
   background-color: #ffffff;
 }
 .btn-success {
@@ -4253,7 +4253,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #d2b983;
+  color: #8ab0a6;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4274,7 +4274,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #be994a;
+  color: #608e82;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4417,7 +4417,7 @@ tbody.collapse.in {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #b08c3f;
+  background-color: #d0d0d0;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -4506,7 +4506,7 @@ tbody.collapse.in {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #785f2b;
+  background-color: #aaaaaa;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -4521,8 +4521,8 @@ tbody.collapse.in {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #785f2b;
-  border-color: #d2b983;
+  background-color: #aaaaaa;
+  border-color: #8ab0a6;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4553,7 +4553,7 @@ tbody.collapse.in {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #ffffff;
-  background-color: #785f2b;
+  background-color: #aaaaaa;
   border: 1px solid transparent;
   border-bottom-color: transparent;
   cursor: default;
@@ -5010,22 +5010,22 @@ tbody.collapse.in {
   }
 }
 .navbar-default {
-  background-color: #ffffff;
+  background-color: #232323;
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #141414;
+  color: #d0d0d0;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #000000;
+  color: #b7b7b7;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #141414;
+  color: #d0d0d0;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #141414;
+  color: #d0d0d0;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -5045,14 +5045,14 @@ tbody.collapse.in {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #141414;
+  border-color: #d0d0d0;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: #232323;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #141414;
+  background-color: #d0d0d0;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -5066,7 +5066,7 @@ tbody.collapse.in {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #141414;
+    color: #d0d0d0;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5087,13 +5087,13 @@ tbody.collapse.in {
   }
 }
 .navbar-default .navbar-link {
-  color: #141414;
+  color: #d0d0d0;
 }
 .navbar-default .navbar-link:hover {
   color: #b08c3f;
 }
 .navbar-default .btn-link {
-  color: #141414;
+  color: #d0d0d0;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
@@ -5223,7 +5223,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.428571429;
   text-decoration: none;
-  color: #d2b983;
+  color: #8ab0a6;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -5244,7 +5244,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #be994a;
+  color: #608e82;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -5256,8 +5256,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #b08c3f;
-  border-color: #b08c3f;
+  background-color: #d0d0d0;
+  border-color: #d0d0d0;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -5595,22 +5595,22 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-bottom-color: transparent;
 }
 .panel-primary {
-  border-color: #b08c3f;
+  border-color: #d0d0d0;
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #b08c3f;
-  border-color: #b08c3f;
+  background-color: #d0d0d0;
+  border-color: #d0d0d0;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #b08c3f;
+  border-top-color: #d0d0d0;
 }
 .panel-primary > .panel-heading .badge {
-  color: #b08c3f;
+  color: #d0d0d0;
   background-color: #ffffff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #b08c3f;
+  border-bottom-color: #d0d0d0;
 }
 .panel-success {
   border-color: #d6e9c6;
@@ -6613,7 +6613,6 @@ h2,
 h3,
 h4,
 h5 {
-  text-transform: uppercase;
   color: #fce87d;
 }
 h6 {
@@ -6826,13 +6825,13 @@ article .entry-content img,
   text-transform: uppercase;
 }
 #pozos .casino_name {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1;
 }
 #pozos .casino_pozo {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: #fce87d;
   font-size: 28px;

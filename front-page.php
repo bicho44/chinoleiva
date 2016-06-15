@@ -6,9 +6,11 @@
  * Date: 06
  */
 
-get_header();?>
+get_header();
 
-
+/*  Hooking here  */
+do_action('imgd_post_header');
+?>
 
 <?php
 if ( have_posts() ) :
@@ -42,4 +44,7 @@ else :
 endif; ?>
 
 
-<?php get_footer();
+<?php
+do_action('imgd_pre_footer');
+
+get_footer();
