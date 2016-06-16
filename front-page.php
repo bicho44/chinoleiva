@@ -9,7 +9,7 @@
 get_header();
 
 /*  Hooking here  */
-do_action('imgd_post_header');
+//do_action('imgd_post_header');
 ?>
 	<!--Arrow Navigation-->
 	<a id="prevslide" class="load-item"></a>
