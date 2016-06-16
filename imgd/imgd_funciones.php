@@ -1,18 +1,27 @@
 <?php
 
-
-
 /**
  * Jquery enqueue
  */
-function imgd_jquery_enqueue() {
-    wp_deregister_script('jquery');
+// jQuery from Google's CDN, fallback to local if not available
+add_action('wp_enqueue_scripts', 'load_external_jQuery');
 
-    wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", false, null, true);
+// Deregister jQuery that is included with WordPress
+function load_external_jQuery() {
+	wp_deregister_script( 'jquery' );
 
-    //wp_register_script('jquery', get_template_directory_uri()."/assets/js/vendor/jquery-1.10.2.js", false, null, false);
-
-    wp_enqueue_script('jquery');
+// Check to make sure Google's library is available
+	$link = 'http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js';
+	$try_url = @fopen($link,'r');
+	if( $try_url !== false ) {
+		// If it's available, get it registered
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', false, null, true);
+	} else {
+		// Register the local file if CDN fails
+		wp_register_script('jquery', get_template_directory_uri().'/assets/js/vendor/jquery.min.js', __FILE__, false, '2.2.4', true);
+	}
+	// Get it enqueued
+	wp_enqueue_script('jquery');
 }
 
 
@@ -21,27 +30,20 @@ function imgd_jquery_enqueue() {
  */
 function imgdigital_scripts() {
 
-    wp_enqueue_style( 'imgdigital-style', get_template_directory_uri()."/assets/css/style.css");
-
-    /* wp_enqueue_style( 'animacion-style', get_template_directory_uri()."/assets/css/animation.css"); */
-
-    //Modernizer
-    wp_register_script('img_modern', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
-
-    /* EnQueue jQuery */
-    imgd_jquery_enqueue();
-
-    //wp_enqueue_script( 'imgdigital-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	//Modernizer
+	wp_register_script('img_modern', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
 
     // Scripts from Bootstrap
-    wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/script-ck.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'scripts-ck', get_template_directory_uri() . '/assets/js/script-ck.js', array( 'jquery' ), null, true );
 
-
-    wp_enqueue_script('img_modern');
+	wp_enqueue_script('img_modern');
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+	wp_enqueue_style( 'imgdigital-style', get_template_directory_uri()."/assets/css/style.css");
+
 }
 add_action( 'wp_enqueue_scripts', 'imgdigital_scripts' );
 
@@ -59,13 +61,13 @@ function imgd_theme_add_editor_styles() {
 add_action( 'admin_init', 'imgd_theme_add_editor_styles' );
 
 function imgd_theme_add_font_editor_styles() {
-    $font_url = str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Raleway:400,700,900' );
+    $font_url = str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Lato:400,700,900' );
     add_editor_style( $font_url );
 
-    $font_url2 = str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600' );
-    add_editor_style( $font_url2 );
+    /*$font_url2 = str_replace( ',', '%2C', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600' );
+    add_editor_style( $font_url2 );*/
 }
-//add_action( 'after_setup_theme', 'imgd_theme_add_font_editor_styles' );
+add_action( 'after_setup_theme', 'imgd_theme_add_font_editor_styles' );
 
 
 /**
