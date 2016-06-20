@@ -103,19 +103,21 @@ add_filter( 'wp_calculate_image_sizes', 'imgd_content_image_sizes_attr', 10 , 2 
 }
 add_filter( 'wp_get_attachment_image_attributes', 'imgd_post_thumbnail_sizes_attr', 10 , 3 );*/
 
-if(!function_exists('imgd_has_slideshow_thumbnail')) {
+/*if(!function_exists('imgd_has_slideshow_thumbnail')) {
     /**
      * Verifica que haya imagen en el SlideShow
      *
      * @param null $post
      * @return bool
      */
-    function imgd_has_slideshow_thumbnail($post = null)
+    /*function imgd_has_slideshow_thumbnail($post = null)
     {
         return (bool)imgd_get_slideshow_thumbnail_id($post);
     }
 }
+    */
 
+/*
 
 if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	/**
@@ -127,6 +129,7 @@ if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	 * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global `$post`.
 	 * @return string|int Post thumbnail ID or empty string.
 	 */
+/*
 	function imgd_get_slideshow_thumbnail_id($post = null)
 	{
 		$post = get_post($post);
@@ -135,4 +138,4 @@ if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 		}
 		return get_post_meta($post->ID, 'imgd_image_slideshow', true);
 	}
-}
+}*/
